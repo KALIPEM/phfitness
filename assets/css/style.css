@@ -426,7 +426,7 @@ body{
 
 .faq-question {
   padding: 20px 0;
-  border-bottom: 1px dotted #ccc;
+  border-bottom: 0px dotted #ccc;
 }
 
 .panel-title {
@@ -463,7 +463,7 @@ body{
 .plus {
   position: absolute;
   margin-left: 20px;
-  margin-top: 4px;
+  margin-top: 8px;
   z-index: 5;
   font-size: 20px;
   line-height: 100%;
