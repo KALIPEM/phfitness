@@ -630,6 +630,21 @@ body{
 .subtitle {
   font-size: 0.9rem;
   color: #fff;
+  background-color: #9ABB2C;
+  cursor: pointer;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  width: 100px;
+  border: 2px solid transparent;
+}
+
+.subtitle:hover{
+    color: #9ABB2C;
+    background-color: #fff;
+    border: 2px solid #9ABB2C;
+    transition: 0.5s;
 }
 
 /* Effect */
