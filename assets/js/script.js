@@ -92,7 +92,7 @@ animate();
 
 
 // Function to handle navigation link underlining
-function handleNavigationUnderline() {
+/*function handleNavigationUnderline() {
     const sections = document.querySelectorAll('section'); // Replace 'section' with your section selector
     const navLinks = document.querySelectorAll('.nav-items a'); // Replace '.nav-items a' with your navigation links selector
   
@@ -120,4 +120,4 @@ function handleNavigationUnderline() {
   }
   
   // Call the function when the page loads
-  window.addEventListener('load', handleNavigationUnderline);
+  window.addEventListener('load', handleNavigationUnderline);*/
