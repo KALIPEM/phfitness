@@ -89,20 +89,35 @@ function animate() {
 // Start the animation.
 animate();
 
- // Navbar element active state
 
- let navbarlinks = select('#navbar .scrollto', true)
- const navbarlinksActive = () => {
-   let position = window.scrollY + 200
-   navbarlinks.forEach(navbarlink => {
-     if (!navbarlink.hash) return
-     let section = select(navbarlink.hash)
-     if (!section) return
-     if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-       navbarlink.classList.add('active')
-     } else {
-       navbarlink.classList.remove('active')
-     }
-   })
- }
 
+// Function to handle navigation link underlining
+function handleNavigationUnderline() {
+    const sections = document.querySelectorAll('section'); // Replace 'section' with your section selector
+    const navLinks = document.querySelectorAll('.nav-items a'); // Replace '.nav-items a' with your navigation links selector
+  
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (window.scrollY >= sectionTop && window.scrollY <= sectionTop + sectionHeight) {
+          current = section.getAttribute('id'); // Assuming your sections have 'id' attributes.
+        }
+      });
+  
+      // Remove the 'active' class from all navigation links
+      navLinks.forEach((link) => {
+        link.classList.remove('active');
+      });
+  
+      // Add the 'active' class to the corresponding navigation link
+      const activeLink = document.querySelector(`.nav-items a[href="#${current}"]`);
+      if (activeLink) {
+        activeLink.classList.add('active');
+      }
+    });
+  }
+  
+  // Call the function when the page loads
+  window.addEventListener('load', handleNavigationUnderline);
