@@ -673,7 +673,7 @@ body{
 .plans h1{
   font-size: 50px;
   font-weight: 700;
-  margin-top: 99px;
+  margin-top: 140px;
   text-align: center;
 }
 
@@ -694,18 +694,27 @@ body{
 
 .plans .priceboxes .outside-box .pricebox{
   width: 16vw;
-  height: 20vh;
+  height: 40vh;
   border: 3px solid rgb(122, 150, 27);
   border-radius: 40px 0;
   background: rgb(140,173,32);
   background: radial-gradient(circle, rgba(140,173,32,1) 0%, rgba(154,187,44,1) 100%);
   box-shadow: 5px 5px 10px 3px #787878;
+  cursor: pointer;
 }
 
 .plans .priceboxes .outside-box .pricebox:hover{
   box-shadow: 12px 15px 10px 3px #787878;
   border: 3px solid #9abb2c;
   transition: 0.5s;
+}
+
+.plans .priceboxes .outside-box .pricebox h2{
+  margin-top: 25%;
+}
+
+.plans .priceboxes .outside-box .pricebox h3{
+  margin-top: 60%;
 }
 
 .testimonials .testimonials-carousel,
