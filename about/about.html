@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH | Fitness</title>
+
+    <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+    <!--  Vendor CSS  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet"><link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+
+    <!-- Meta tags -->
+
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="logo">
+            <h1><a href="#"><span>PH</span> | Fitness</a></h1>
+        </div>
+        <!-- .navbar -->
+        <div class="navbar" id="navbar"> 
+            
+            <div class="nav-items">
+                <a href="../index.html" class="scrollto">Home</a>
+                <a href="#About" class="scrollto active">About</a>
+                <a href="../coaches/coaches.html" class="scrollto">Coaches</a>
+                <a href="../plans/plans.html" class="scrollto planlink">Plans</a>
+                <a href="../contact-us/contact-us.html" class="scrollto">Contact Us</a>
+            </div>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+            <button class="joinus-btn">
+                Join Us
+              </button>
+        </div>
+    </div>
+    <!--  About Section  -->
+    <section class="about" id="about">
+        <div class="headband">
+            <!--<img src="assets/img/About-image.png" alt="">-->
+            <div id="text-anim">
+                <span id="text1"></span>
+                <span id="text2"></span>
+            </div>
+            
+            <!-- The SVG filter used to create the merging effect -->
+            <svg id="filters">
+                <defs>
+                    <filter id="threshold">
+                        <!-- Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent. -->
+                        <feColorMatrix in="SourceGraphic"
+                                type="matrix"
+                                values="1 0 0 0 0
+                                                0 1 0 0 0
+                                                0 0 1 0 0
+                                                0 0 0 255 -140" />
+                    </filter>
+                </defs>
+            </svg>
+        </div>
+        <div class="about-content">
+            <div class="video-frame">
+                <video controls>
+                  <source src="../assets/vid/The-Rock's-Ultimate-Workout.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="faq-content">
+                <div class="faq-question">
+                  <input id="q1" type="checkbox" class="panel">
+                  <div class="plus">></div>
+                  <label for="q1" class="panel-title">Who we are</label>
+                  <div class="panel-content open">At PH Fitness, we're not just another online fitness platform. We're your personal champions on the path to vitality and self-discovery. Think of us as your squad of dedicated professionals, each with a shared mission: to help you create a healthier, happier life. Our team comprises certified trainers, seasoned coaches, and experienced nutritionists – each with a fervent passion for transforming lives. We understand the hustle and bustle of modern life, and we're here to offer a solution.</div>
+                </div>
+                
+                <div class="faq-question">
+                  <input id="q2" type="checkbox" class="panel">
+                  <div class="plus">></div>
+                  <label for="q2" class="panel-title">How we do it?</label>
+                  <div class="panel-content">Our approach is as unique as you are. We understand that everyone has their own aspirations, body types, and daily routines. That's why we don't believe in one-size-fits-all solutions. We specialize in crafting personalized fitness programs and dietary plans, meticulously tailored to suit your needs. Our system is not just effective; it's a work of art, designed to nurture your individual journey. <br><br>
+
+                    Our online training system is a game-changer. It merges the convenience of virtual fitness with the quality of a top-notch gym. Real-time interactions with our trainers, coaches, and nutritionists keep you engaged and on track. Technology has allowed us to bring the gym to your doorstep, making your fitness journey effortless.</div>
+                </div>
+                
+                <div class="faq-question">
+                  <input id="q3" type="checkbox" class="panel">
+                  <div class="plus">></div>
+                  <label for="q3" class="panel-title">Why we do it?</label>
+                  <div class="panel-content">Behind every action at PH Fitness is a profound belief: that everyone, no matter how busy, deserves a vibrant, healthy life. We've witnessed the strain that the modern world places on our physical and mental well-being. That's why we offer more than just fitness advice; we provide a complete life transformation. <br><br>
+
+                    We know that physical exercise isn't just about sculpting your body; it's about fortifying your mind. Our mission is to help you not only discover your best physical self but also to unlock the mental strength that's been waiting to burst forth. When you choose PH Fitness, you're not just choosing a fitness program; you're choosing a partner in your holistic well-being journey. We're here to help you shed your past, craft a fresh identity, and venture into a healthier, happier future. <br><br>
+                    
+                    In a world that often pushes health to the sidelines, PH Fitness stands as your unwavering beacon, showing you the way to a more vibrant, satisfying existence. Join us, and together, we'll redefine the boundaries of what's possible for your life.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--  Script Files  -->
+<script src="../assets/js/script.js"></script>    
+
+<!--  Vendor script files  -->
+<script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="../assets/vendor/php-email-form/validate.js"></script>
+<script src="../assets/vendor/aos/aos.js"></script>
+
+
+</body>
+</html>

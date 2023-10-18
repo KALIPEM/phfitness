@@ -3,7 +3,7 @@ body{
    padding: 0;
    font-family: 'Inter';
    background-color: #E4E4E4;
-   overflow: hidden;
+   overflow-x: hidden;
 }
 
 /*----header style-----*/
@@ -324,9 +324,7 @@ body{
     height: 100vh;
     background-color: #E4E4E4;
     z-index: 3;
-    overflow-y: scroll;
     overflow-x: hidden;
-    border-bottom: 2px solid #000;
     margin: 0;
 }
 
@@ -664,10 +662,7 @@ body{
 .plans{
     width: 100%;
     height: 100vh;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .plans h1{
@@ -714,7 +709,7 @@ body{
 }
 
 .plans .priceboxes .outside-box .pricebox h3{
-  margin-top: 60%;
+  margin-top: 55%;
 }
 
 .testimonials .testimonials-carousel,
@@ -878,6 +873,4 @@ body{
 .contactus{
     width: 100%;
     height: 100vh;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
 }
