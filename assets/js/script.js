@@ -92,7 +92,7 @@ animate();
 
 
 // Function to handle navigation link underlining
-/*function handleNavigationUnderline() {
+function handleNavigationUnderline() {
     const sections = document.querySelectorAll('section'); // Replace 'section' with your section selector
     const navLinks = document.querySelectorAll('.nav-items a'); // Replace '.nav-items a' with your navigation links selector
   
@@ -105,6 +105,8 @@ animate();
           current = section.getAttribute('id'); // Assuming your sections have 'id' attributes.
         }
       });
+
+	  console.log('Current Section:', current); // Add this line for debugging
   
       // Remove the 'active' class from all navigation links
       navLinks.forEach((link) => {
@@ -116,8 +118,52 @@ animate();
       if (activeLink) {
         activeLink.classList.add('active');
       }
+	  // You can also log some other values for debugging:
+	  console.log('Scroll Position:', window.scrollY);
+	  sections.forEach((section) => {
+		const sectionTop = section.offsetTop;
+		const sectionHeight = section.clientHeight;
+		console.log(`Section ${section.id}: Top ${sectionTop}, Height ${sectionHeight}`);
+	  });
     });
   }
   
   // Call the function when the page loads
-  window.addEventListener('load', handleNavigationUnderline);*/
+  window.addEventListener('load', handleNavigationUnderline);
+
+  document.querySelector('.planlink').addEventListener('click', function(e) {
+	e.preventDefault(); // Prevent the default link behavior
+	window.scrollTo({
+	  top: 2230,
+	});
+  });
+
+
+  /**
+   * Testimonials slider
+   */
+  new Swiper('.testimonials-slider', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      }
+    }
+  });
