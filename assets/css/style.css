@@ -324,7 +324,6 @@ body{
     height: 100vh;
     background-color: #E4E4E4;
     z-index: 3;
-    overflow-x: hidden;
     margin: 0;
 }
 
@@ -334,11 +333,14 @@ body{
 
 .about .headband{
     width: 100%;
-    height: 180px;
+    height: 300px;
     position: relative;
     background: none;
     margin-top: 99px;
-    background-image: url('../img/About-image.png');
+    background-image: url('../img/about-img.jpg');
+    background-size: cover;
+    background-position: 0 -340px ;
+    backdrop-filter: 100% #0000008f;
 }
 
 
@@ -351,7 +353,7 @@ body{
 	margin: auto;
 	width: 100vw;
 	height: 80pt;
-	top: 70px;
+	top: 90px;
 	filter: url(#threshold) blur(0.6px);
 }
 
@@ -360,7 +362,7 @@ body{
 	position: absolute;
 	width: 100%;
 	display: inline-block;
-	
+	top: 30px;
 	font-family: 'Raleway', sans-serif;
 	font-size: 50pt;
 	
@@ -662,7 +664,6 @@ body{
 .plans{
     width: 100%;
     height: 100vh;
-    overflow-x: hidden;
 }
 
 .plans h1{
@@ -873,4 +874,66 @@ body{
 .contactus{
     width: 100%;
     height: 100vh;
+}
+
+.brown{
+  width: 100%;
+  height: 460px;
+  margin-top: 99px;
+  background: #AE8282;
+  display: flex;
+  flex-direction: row;
+}
+
+.brown img{
+  width: 40%;
+  height: auto;
+  border-radius: 40px 0;
+  margin: 3%;
+}
+
+.brown .contactus-info{
+  width: 40%;
+  height: auto;
+
+}
+
+.brown .contactus-info h1{
+  font-size: 40px;
+}
+
+.brown .contactus-info h3 span{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.brown .contactus-info .social{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.brown .contactus-info .social .icon-container a{
+  text-decoration: none;
+  color: black;
+}
+
+.brown .contactus-info .social .icon-container a:hover{
+  color:#9ABB2C;
+  transition: 0.6s;
+}
+
+/*   Footer Styles    */
+
+.footer{
+  width: 100%;
+  height: calc(100vh - 430px);
+  background-color: #9ABB2C;
+  display: flex;
+  padding: 30px;
+  gap: 20px;
+}
+
+.footer-cn{
+  width: 35%;
 }
