@@ -231,7 +231,6 @@ body{
     top: 30px;
   }
   
-  
 }
 
 @media (max-width: 400px){
@@ -297,6 +296,7 @@ body{
     top: 99px;
     left:-350px;
     z-index: 2;    
+    transition: 0.6s ease;
 }
 
 .hero .hero-line{
@@ -310,6 +310,7 @@ body{
     margin-top: 136px;
     margin-right: 139px;
     text-align: right;
+    transition: 0.5s ease;
 }
 
 .hero .calltoaction{
@@ -318,6 +319,7 @@ body{
     position: absolute;
     right: 220px;
     top: 443px;
+    transition: 0.5s ease;
 }
 
 .hero .calltoaction p{
@@ -495,7 +497,15 @@ body{
 }
 
 @media (max-width: 700px){
+  .hero .hero-img{
+    left: -430px;
+  }
 
+  .hero .hero-line{
+    font-size: 46px;
+    margin-top:170px;
+    margin-right: 10px;
+  }
 }
 
 @media (max-width: 400px){
@@ -516,6 +526,19 @@ body{
   left: -500px;
 }
 
+}
+
+@media (min-height: 649px){
+  .hero .calltoaction{
+    width: 325px;
+    height: 182px;
+    position: absolute;
+    z-index: 5;
+    right: 20px;
+    bottom: 10px;
+    background-color: #e4e4e4b6;
+    border-radius: 10px 10px 10px 10px;
+  }
 }
 
 /*--------- About Section Styles -----------*/
