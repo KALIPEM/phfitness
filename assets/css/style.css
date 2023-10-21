@@ -23,6 +23,7 @@ body{
     text-decoration: none;
     color: black;
     margin: 29px 0 31px 76px;
+    font-size: calc(24px + (30 - 10) * (100vw - 320px) / (1920 - 320));;
 }
 
 .header h1 a span{
@@ -148,6 +149,8 @@ body{
 
     .header h1{
       text-align: center;
+      font-size: 24px;
+      margin-left: -100px;
     }
 
     .header .nav.active{
@@ -167,21 +170,19 @@ body{
         font-size: 1.2em;
         margin: 20px;
     }
-    .header .nav .nav-items a:before{
-        background: #222;
-        height: 5px;
-    }
     .header .nav .nav-items{
         background: #fff;
-        width: 600px;
+        width: 75vw;
         max-width: 600px;
-        margin: 20px;
+        margin: 10px;
+        left: 0;
         padding: 40px;
         display: flex;
         flex-direction: column;
         align-items: center;
         border-radius: 5px;
         box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+        gap: 20px;
     }
     .menu-btn{
         background: url("../img/hamb.png") no-repeat;
@@ -194,14 +195,42 @@ body{
         position: absolute;
         top: 20px;
         left: 10px;
+        z-index: 9999;
     }
     .menu-btn.active{
-        z-index: 999;
+        z-index: 9999;
         background: url("../img/close.png") no-repeat;
         background-size: 25px;
         background-position: center;
         transition: 0.3s ease;
     }
+}
+
+@media (max-width: 700px){
+  .joinus-btn {
+    height: 35px;
+    width: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    position: relative;
+    cursor: pointer;
+    background: #9ABB2C;
+    border: 0px solid #000;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    right: 33px;
+    top: 27px;
+  }
+  
+  
 }
 
   /*----  Hero Section Styles -------*/
