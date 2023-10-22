@@ -1,3 +1,15 @@
+/*-------- Fonts ------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Red+Hat+Display:wght@300;400;500;600;700;800;900&family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/*
+font-family: 'Didact Gothic', sans-serif;
+font-family: 'Lexend', sans-serif;
+font-family: 'Plus Jakarta Sans', sans-serif;
+font-family: 'Red Hat Display', sans-serif;
+font-family: 'Source Sans 3', sans-serif;
+*/
+
 body{
    margin: 0;
    padding: 0;
@@ -301,13 +313,13 @@ body{
 
 .hero .hero-line{
     color: #828282;
-    font-family: Outfit;
+    font-family: 'Lexend', sans-serif;
     font-size: 95px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 7.6px;
-    margin-top: 136px;
+    margin-top: 116px;
     margin-right: 139px;
     text-align: right;
     transition: 0.5s ease;
@@ -317,14 +329,14 @@ body{
     width: 375px;
     height: 182px;
     position: absolute;
-    right: 220px;
+    right: 100px;
     top: 443px;
     transition: 0.5s ease;
 }
 
 .hero .calltoaction p{
     color: #000;
-    font-family: Inter;
+    font-family: 'Red Hat Display', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -528,7 +540,7 @@ body{
 
 }
 
-@media (min-height: 649px){
+@media (min-height: 750px){
   .hero .calltoaction{
     width: 325px;
     height: 182px;
@@ -545,7 +557,7 @@ body{
 
 .about{
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: #E4E4E4;
     z-index: 3;
     margin: 0;
@@ -556,13 +568,14 @@ body{
 /*------- HeadBand Style -------*/
 
 .about .headband{
-    width: 100%;
+    width: 100vw;
     height: 300px;
     position: relative;
     background: none;
     margin-top: 99px;
     background-image: url('../img/about-img.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: 0 -340px ;
     backdrop-filter: 100% #0000008f;
 }
@@ -620,35 +633,12 @@ body{
     height: 100%;
     object-fit: cover;
   }
-  
-  /* Style the video controls 
-  .video-frame video::-webkit-media-controls {
-    display: block;
-    opacity: 1;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 15px; 
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    padding: 5px;
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  .video-frame video::-webkit-media-controls-play-button,
-  .video-frame video::-webkit-media-controls-volume-slider {
-    background: transparent;
-  }
-
-  .abtcontent{
-    width: 50vw;
-    height: auto
-  }*/
 
   .faq-content {
     margin: 0 auto;
     width: 40vw;
     position: relative; /* Add this to establish a positioning context */
+    font-family: 'Red Hat Display', sans-serif;
   }
   
   .faq-question {
@@ -665,17 +655,18 @@ body{
     padding: 10px 10px 0 48px;
     display: block;
     cursor: pointer;
+    font-weight: 800;
   }
   
   .panel-content {
     font-size: 16px;
-    padding: 0px 14px;
+    padding: 14px 14px;
     margin: 0 40px;
-    height: 0;
+    height: auto;
     overflow: hidden;
     z-index: 4;
     position: relative;
-    opacity: 0;
+    opacity: 1;
     -webkit-transition: .4s ease;
     -moz-transition: .4s ease;
     -o-transition: .4s ease;
@@ -704,8 +695,9 @@ body{
     -moz-transition: .2s ease;
     -o-transition: .2s ease;
     transition: .2s ease;
+    display: none;
   }
-  
+
   .panel:checked ~ .plus {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
@@ -716,7 +708,178 @@ body{
   .panel {
     display: none;
   }
+
+  .video-map{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .maps h2{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .maps .map2{
+    display: none;
+  }
+
+@media (max-width: 1040px){
+   .maps .map1{
+    display: none;
+   }
+
+   .maps .map2{
+    display:block;
+    transition: ease-in 0.5s;
+   }
+}
+
+@media (max-width: 700px){
+  .about-content{
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .video-map{
+    order:2;
+  }
+
+  .plus{
+    display: block;
+    left: -180px;
+    top: 32px;
+  }
+
+  .panel-content {
+    font-size: 16px;
+    padding: 0px 14px;
+    height: 0;
+    width: 80vw;
+    margin-left: -160px;
+  }  
+
+  .panel-title {
+    font-size: 20px;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 10px 10px 0 48px;
+    display: block;
+    cursor: pointer;
+    font-weight: 800;
+    margin-left: -200px;
+  }
+
+  .video-frame{
+    width: 80vw;
+    margin-left: 40px;
+  }
+
+  .maps .map1{
+    display: block;
+   }
+
+   .maps .map2{
+    display:none;
+    transition: ease-in 0.5s;
+   }
+
+   .about .headband{
+    width: 100vw;
+    height: 300px;
+    position: relative;
+    background: none;
+    margin-top: 99px;
+    background-image: url('../img/about-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -140px ;
+  }
+  #text1, #text2{
+    font-size: 30pt;
+  }
+}
+
+@media (max-width: 650px){
+  .maps .map1{
+    display: none;
+  }
+
+  .maps .map2{
+    display: block;
+  }
+
+  .video-map{
+    align-items: center;
     
+  }
+
+  .video-frame{
+    margin-left: -100px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 570px){
+  .maps{
+    margin-left: -100px;
+  }
+
+  .plus{
+    display: block;
+    left: -140px;
+    top: 32px;
+  }
+
+  .panel-content {
+    font-size: 16px;
+    padding: 0px 14px;
+    height: 0;
+    width: 80vw;
+    margin-left: -160px;
+  }  
+
+  .panel-title {
+    font-size: 20px;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 10px 10px 0 48px;
+    display: block;
+    cursor: pointer;
+    font-weight: 800;
+    margin-left: -150px;
+  }
+
+  .faq-content{
+    margin-top: -100px;
+  }
+}
+
+@media (max-width: 400px){
+  .about .headband{
+    width: 100vw;
+    height: 300px;
+    position: relative;
+    background: none;
+    margin-top: 99px;
+    background-image: url('../img/about-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -0px ;
+  }
+
+  #text1, #text2{
+    font-size: 25pt;
+    margin-top: 50px;
+  }
+
+  .faq-content{
+    margin-top: -30px;
+  }
+}
 
 /*------------ Coaches section style -----------*/
 .coaches{
