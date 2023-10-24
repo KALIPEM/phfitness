@@ -553,6 +553,18 @@ body{
   }
 }
 
+@media (max-width: 400px) and (min-height: 700px){
+  .hero .hero-img{
+    margin-left: -150px;
+  }
+}
+
+@media (min-height: 700px){
+  .hero .calltoaction{
+    top: 500px;
+  }
+}
+
 /*--------- About Section Styles -----------*/
 
 .about{
