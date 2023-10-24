@@ -1530,6 +1530,37 @@ box-shadow:  12px 12px 16px #949494,
   }
 }
 
+@media (max-width: 365px){
+  .planscontainer{
+    flex-direction: column;
+    gap: 35px;
+    margin-left: -35%;
+  }
+  
+  .outer-plan{
+    width: calc(100% / 3);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+  
+  .outer-plan .inner-plan{
+    width: 300px;
+    height: 150px;
+    border-radius: 26px;
+  background: linear-gradient(145deg, #cdcdcd, #f4f4f4);
+  box-shadow:  12px 12px 16px #949494,
+               -12px -12px 16px #ffffff;
+    padding: 20px 20px 60px 20px;
+  }
+  
+  .outer-plan .inner-plan h1{
+    margin-top: 0;
+    font-size: 35px;
+  }
+}
+
 /*-------- Contact Us Styles -----------------*/
 
 .contactus{
