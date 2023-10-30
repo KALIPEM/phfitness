@@ -185,8 +185,7 @@ body{
     }
     .header .nav .nav-items{
         background: #fff;
-        width: 75vw;
-        max-width: 600px;
+        width: 90vw;
         margin: 10px;
         left: 0;
         padding: 40px;
@@ -242,7 +241,11 @@ body{
     right: 33px;
     top: 30px;
   }
-  
+
+  .header .nav .nav-items{
+    width: 88vw;
+    margin-left: 0px;
+  }
 }
 
 @media (max-width: 400px){
@@ -926,7 +929,7 @@ body{
 }
 
 .content-flexcard {
-  background: url('../img/coaches/pexels-allan-mas-5383721.jpg')
+  background: url('../img/coaches/DSC00036-min.jpg')
   100% / cover no-repeat;
   border-radius: 3rem;
   cursor: pointer;
@@ -957,29 +960,29 @@ body{
 }
 
 .content-flexcard:nth-of-type(2) {
-  background-image: url('../img/coaches/pexels-andres-ayrton-6551465.jpg');
+  background-image: url('../img/coaches/DSC00076-min.jpg');
 }
 
 .content-flexcard:nth-of-type(3) {
-  background-image: url('../img/coaches/pexels-cottonbro-studio-7207568.jpg');
+  background-image: url('../img/coaches/DSC00089-min.jpg');
 }
 
 .content-flexcard:nth-of-type(4) {
-  background-image: url('../img/coaches/pexels-julia-larson-6456176.jpg');
+  background-image: url('../img/coaches/DSC00107-min.jpg');
   background-position: 0px 0px;
 }
 
 .content-flexcard:nth-of-type(5) {
-  background-image: url('../img/coaches/pexels-kampus-production-6111621.jpg');
+  background-image: url('../img/coaches/DSC00044-min.jpg');
   margin-right: 0;
 }
 
 .content-flexcard:nth-of-type(6) {
-  background-image: url('../img/coaches/pexels-mikhail-nilov-6740299.jpg');
+  background-image: url('../img/coaches/DSC00036-min.jpg');
 }
 
 .content-flexcard:nth-of-type(7) {
-  background-image: url('../img/coaches/pexels-tima-miroshnichenko-5750746.jpg');
+  background-image: url('../img/coaches/DSC00089-min.jpg');
 }
 
 .content:nth-of-type(2) .icon {
@@ -1181,6 +1184,38 @@ body{
     width: 20rem;
     margin-bottom: 50px;
   }
+  
+  .content-flexcard:nth-of-type(1) {
+    background-position: -270px 00px;
+  }
+
+  .content-flexcard:nth-of-type(2) {
+    background-image: url('../img/coaches/DSC00076-min.jpg');
+    background-position: -450px 00px;
+  }
+  
+  .content-flexcard:nth-of-type(3) {
+    background-image: url('../img/coaches/DSC00089-min.jpg');
+    background-position: -250px 00px;
+  }
+  
+  .content-flexcard:nth-of-type(4) {
+    background-image: url('../img/coaches/DSC00107-min.jpg');
+    background-position: -380px 0px;
+  }
+  
+  .content-flexcard:nth-of-type(5) {
+    background-image: url('../img/coaches/DSC00044-min.jpg');
+    margin-right: 0;
+  }
+  
+  .content-flexcard:nth-of-type(6) {
+    background-image: url('../img/coaches/DSC00036-min.jpg');
+  }
+  
+  .content-flexcard:nth-of-type(7) {
+    background-image: url('../img/coaches/DSC00089-min.jpg');
+  }
 
   .radio:checked + .content-flexcard {
     flex: 14;
@@ -1264,10 +1299,17 @@ background: linear-gradient(145deg, #cdcdcd, #f4f4f4);
 box-shadow:  12px 12px 16px #949494,
              -12px -12px 16px #ffffff;
   padding: 20px 20px 60px 20px;
+  position: relative;
 }
 
 .outer-plan .inner-plan h1{
   margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.outer-plan .inner-plan p{
+  font-size: 0.9rem;
+  margin-top: -35px;
 }
 
 .outer-plan .inner-plan a button{
@@ -1276,8 +1318,10 @@ box-shadow:  12px 12px 16px #949494,
     background-color: #9ABB2C;
     cursor: pointer;
     text-align: center;
+    position: absolute;
     padding: 5px;
-    margin: 5px 5px 50px 5px;
+    top: 180px;
+    left: 120px;
     border-radius: 10px;
     width: 100px;
     border: 2px solid transparent;
@@ -1538,7 +1582,11 @@ box-shadow:  12px 12px 16px #949494,
   
   .outer-plan .inner-plan h1{
     margin-top: 0;
-    font-size: 35px;
+    font-size: 25px;
+  }
+
+  .outer-plan .inner-plan p{
+    font-size: 12px;
   }
 }
 
@@ -1668,10 +1716,9 @@ box-shadow:  12px 12px 16px #949494,
 .featured-item .img{
   width: 100%;
   height: 250px;
-  background-image: url('../img/coaches/pexels-cottonbro-studio-7207568.jpg');
+  background-image: url('../img/coaches/DSC00044-min.jpg');
   background-size: cover;
   border-radius: 20px;
-  background-position: 0px -190px;
 }
 
 .extra-margin{
