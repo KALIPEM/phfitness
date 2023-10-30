@@ -1300,7 +1300,7 @@ box-shadow:  12px 12px 16px #949494,
              -12px -12px 16px #ffffff;
   padding: 20px 20px 60px 20px;
   position: relative;
-  text-align: justify;
+  text-align: center;
 }
 
 .outer-plan .inner-plan h1{
@@ -1312,6 +1312,12 @@ box-shadow:  12px 12px 16px #949494,
   font-size: 0.9rem;
   margin-top: -35px;
   text-align: justify;
+}
+
+.outer-plan .inner-plan b{
+  position: absolute;
+  bottom: 55px;
+  right: 110px;
 }
 
 .outer-plan .inner-plan a button{
